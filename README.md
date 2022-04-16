@@ -1,4 +1,4 @@
-# Desafio2-Alkemy-Trivis-PreAceleracion
+# Desafio2-Alkemy-Trivia-PreAceleracion
 
 Durante la explicación de iOS se irá desarrollando una aplicación sobre preguntas random. Para obtener las preguntas y respuestas se utiliza la API pública llamada Open Trivia.
 Se trabajará una primera versión que consiste en preguntas random de cualquier categoría en la cual se verán conceptos como creación de vistas, controladores, elementos de las vistas y acciones, navegación entre pantallas, MVC, scrollview, entre otros.

@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ED26A4D80543CA468AC80BA /* Pods_TriviaAlkemyChallenge2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E569585D757A8AF667818FD /* Pods_TriviaAlkemyChallenge2.framework */; };
+		D248E2102807888900A300CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E20F2807888900A300CE /* AppDelegate.swift */; };
+		D248E2122807888900A300CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2112807888900A300CE /* SceneDelegate.swift */; };
+		D248E2142807888900A300CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2132807888900A300CE /* ViewController.swift */; };
+		D248E2192807888B00A300CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D248E2182807888B00A300CE /* Assets.xcassets */; };
+		D248E21C2807888B00A300CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D248E21A2807888B00A300CE /* LaunchScreen.storyboard */; };
+		D248E2252807942C00A300CE /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2232807942C00A300CE /* InitialViewController.swift */; };
+		D248E2262807942C00A300CE /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248E2242807942C00A300CE /* InitialViewController.xib */; };
+		D248E2292808A59300A300CE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2272808A59200A300CE /* QuestionViewController.swift */; };
+		D248E22A2808A59300A300CE /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248E2282808A59300A300CE /* QuestionViewController.xib */; };
+		D248E22C2808AE5400A300CE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E22B2808AE5400A300CE /* TabBarViewController.swift */; };
+		D248E22F2808AF8500A300CE /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E22D2808AF8500A300CE /* CategoriesViewController.swift */; };
+		D248E2302808AF8500A300CE /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248E22E2808AF8500A300CE /* CategoriesViewController.xib */; };
+		D248E2332809032000A300CE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2322809032000A300CE /* Category.swift */; };
+		D248E2352809044100A300CE /* AlamofireAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2342809044100A300CE /* AlamofireAPIClient.swift */; };
+		D248E237280904C800A300CE /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E236280904C800A300CE /* CategoriesViewModel.swift */; };
+		D248E2392809069600A300CE /* CategoriesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248E2382809069600A300CE /* CategoriesServices.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AA06A25F31EF7A93726328F /* Pods-TriviaAlkemyChallenge2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaAlkemyChallenge2.debug.xcconfig"; path = "Target Support Files/Pods-TriviaAlkemyChallenge2/Pods-TriviaAlkemyChallenge2.debug.xcconfig"; sourceTree = "<group>"; };
+		54C9324250981E36165D213A /* Pods-TriviaAlkemyChallenge2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaAlkemyChallenge2.release.xcconfig"; path = "Target Support Files/Pods-TriviaAlkemyChallenge2/Pods-TriviaAlkemyChallenge2.release.xcconfig"; sourceTree = "<group>"; };
+		7E569585D757A8AF667818FD /* Pods_TriviaAlkemyChallenge2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriviaAlkemyChallenge2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D248E20C2807888900A300CE /* TriviaAlkemyChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaAlkemyChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D248E20F2807888900A300CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D248E2112807888900A300CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D248E2132807888900A300CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D248E2182807888B00A300CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D248E21B2807888B00A300CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D248E21D2807888B00A300CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D248E2232807942C00A300CE /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		D248E2242807942C00A300CE /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		D248E2272808A59200A300CE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D248E2282808A59300A300CE /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		D248E22B2808AE5400A300CE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D248E22D2808AF8500A300CE /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		D248E22E2808AF8500A300CE /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		D248E2322809032000A300CE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D248E2342809044100A300CE /* AlamofireAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIClient.swift; sourceTree = "<group>"; };
+		D248E236280904C800A300CE /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		D248E2382809069600A300CE /* CategoriesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D248E2092807888900A300CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED26A4D80543CA468AC80BA /* Pods_TriviaAlkemyChallenge2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E8B467C4CB2974AF30BB546 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AA06A25F31EF7A93726328F /* Pods-TriviaAlkemyChallenge2.debug.xcconfig */,
+				54C9324250981E36165D213A /* Pods-TriviaAlkemyChallenge2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		27FE447BCF442785D14A778C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E569585D757A8AF667818FD /* Pods_TriviaAlkemyChallenge2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D248E2032807888900A300CE = {
+			isa = PBXGroup;
+			children = (
+				D248E20E2807888900A300CE /* TriviaAlkemyChallenge2 */,
+				D248E20D2807888900A300CE /* Products */,
+				1E8B467C4CB2974AF30BB546 /* Pods */,
+				27FE447BCF442785D14A778C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D248E20D2807888900A300CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D248E20C2807888900A300CE /* TriviaAlkemyChallenge2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D248E20E2807888900A300CE /* TriviaAlkemyChallenge2 */ = {
+			isa = PBXGroup;
+			children = (
+				D248E23A2809C55300A300CE /* Model */,
+				D248E2312808FB7100A300CE /* View */,
+				D248E23B2809C5BE00A300CE /* ViewModel */,
+				D248E2112807888900A300CE /* SceneDelegate.swift */,
+				D248E20F2807888900A300CE /* AppDelegate.swift */,
+				D248E2132807888900A300CE /* ViewController.swift */,
+				D248E2342809044100A300CE /* AlamofireAPIClient.swift */,
+				D248E2382809069600A300CE /* CategoriesServices.swift */,
+				D248E2182807888B00A300CE /* Assets.xcassets */,
+				D248E21A2807888B00A300CE /* LaunchScreen.storyboard */,
+				D248E21D2807888B00A300CE /* Info.plist */,
+			);
+			path = TriviaAlkemyChallenge2;
+			sourceTree = "<group>";
+		};
+		D248E2312808FB7100A300CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D248E2232807942C00A300CE /* InitialViewController.swift */,
+				D248E2242807942C00A300CE /* InitialViewController.xib */,
+				D248E22B2808AE5400A300CE /* TabBarViewController.swift */,
+				D248E22D2808AF8500A300CE /* CategoriesViewController.swift */,
+				D248E22E2808AF8500A300CE /* CategoriesViewController.xib */,
+				D248E2272808A59200A300CE /* QuestionViewController.swift */,
+				D248E2282808A59300A300CE /* QuestionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D248E23A2809C55300A300CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D248E2322809032000A300CE /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D248E23B2809C5BE00A300CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D248E236280904C800A300CE /* CategoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D248E20B2807888900A300CE /* TriviaAlkemyChallenge2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D248E2202807888B00A300CE /* Build configuration list for PBXNativeTarget "TriviaAlkemyChallenge2" */;
+			buildPhases = (
+				E0B37A6582E3CCF538EDE13B /* [CP] Check Pods Manifest.lock */,
+				D248E2082807888900A300CE /* Sources */,
+				D248E2092807888900A300CE /* Frameworks */,
+				D248E20A2807888900A300CE /* Resources */,
+				372EED81D4434C5F5EC68A66 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriviaAlkemyChallenge2;
+			productName = TriviaAlkemyChallenge2;
+			productReference = D248E20C2807888900A300CE /* TriviaAlkemyChallenge2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D248E2042807888900A300CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D248E20B2807888900A300CE = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D248E2072807888900A300CE /* Build configuration list for PBXProject "TriviaAlkemyChallenge2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D248E2032807888900A300CE;
+			productRefGroup = D248E20D2807888900A300CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D248E20B2807888900A300CE /* TriviaAlkemyChallenge2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D248E20A2807888900A300CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D248E21C2807888B00A300CE /* LaunchScreen.storyboard in Resources */,
+				D248E2192807888B00A300CE /* Assets.xcassets in Resources */,
+				D248E2302808AF8500A300CE /* CategoriesViewController.xib in Resources */,
+				D248E22A2808A59300A300CE /* QuestionViewController.xib in Resources */,
+				D248E2262807942C00A300CE /* InitialViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		372EED81D4434C5F5EC68A66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriviaAlkemyChallenge2/Pods-TriviaAlkemyChallenge2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TriviaAlkemyChallenge2/Pods-TriviaAlkemyChallenge2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TriviaAlkemyChallenge2/Pods-TriviaAlkemyChallenge2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B37A6582E3CCF538EDE13B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TriviaAlkemyChallenge2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D248E2082807888900A300CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D248E2142807888900A300CE /* ViewController.swift in Sources */,
+				D248E2292808A59300A300CE /* QuestionViewController.swift in Sources */,
+				D248E237280904C800A300CE /* CategoriesViewModel.swift in Sources */,
+				D248E2102807888900A300CE /* AppDelegate.swift in Sources */,
+				D248E2122807888900A300CE /* SceneDelegate.swift in Sources */,
+				D248E2352809044100A300CE /* AlamofireAPIClient.swift in Sources */,
+				D248E22C2808AE5400A300CE /* TabBarViewController.swift in Sources */,
+				D248E2332809032000A300CE /* Category.swift in Sources */,
+				D248E22F2808AF8500A300CE /* CategoriesViewController.swift in Sources */,
+				D248E2252807942C00A300CE /* InitialViewController.swift in Sources */,
+				D248E2392809069600A300CE /* CategoriesServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D248E21A2807888B00A300CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D248E21B2807888B00A300CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D248E21E2807888B00A300CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D248E21F2807888B00A300CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D248E2212807888B00A300CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA06A25F31EF7A93726328F /* Pods-TriviaAlkemyChallenge2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6M8KNJT3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaAlkemyChallenge2/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = InitialViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SevenSoftware.TriviaAlkemyChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D248E2222807888B00A300CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C9324250981E36165D213A /* Pods-TriviaAlkemyChallenge2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6M8KNJT3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaAlkemyChallenge2/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = InitialViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SevenSoftware.TriviaAlkemyChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D248E2072807888900A300CE /* Build configuration list for PBXProject "TriviaAlkemyChallenge2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D248E21E2807888B00A300CE /* Debug */,
+				D248E21F2807888B00A300CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D248E2202807888B00A300CE /* Build configuration list for PBXNativeTarget "TriviaAlkemyChallenge2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D248E2212807888B00A300CE /* Debug */,
+				D248E2222807888B00A300CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D248E2042807888900A300CE /* Project object */;
+}
